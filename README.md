@@ -1,8 +1,12 @@
 # Peerbits-Java-Test
 
-Problem statement 1 :-
+**** Note : We have not used any framework, you can follow the below information to test the programs ****
 
-Write a program to reverse the integer, you cannot convert integer to string and cannot use int.parse function.
+
+**Problem statement 1 :-**
+
+**Write a program to reverse the integer, you cannot convert integer to string and cannot use int.parse function.**
+
 
 
 To Run the program please follow the below steps.
@@ -17,10 +21,15 @@ To Run the program please follow the below steps.
 
 
 
-Problem statement 2 :-
 
-Write a program to multiply two strings and produce a result as a string.
-E.g. String A = 25 and string B = 125 , result = 3125. Don’t use string.parseInt or Integer.valueof functions.
+
+
+**Problem statement 2 :-**
+
+**Write a program to multiply two strings and produce a result as a string.
+E.g. String A = 25 and string B = 125 , result = 3125. Don’t use string.parseInt or Integer.valueof functions.**
+
+
 
 To Run the program please follow the below steps.
 
