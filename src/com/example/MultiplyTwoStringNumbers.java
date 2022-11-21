@@ -34,17 +34,14 @@ public class MultiplyTwoStringNumbers {
 
         String number2 = sc.next();
 
-        String output = "0";
         if (number1.equalsIgnoreCase("0") || number1.equalsIgnoreCase("0")) {
             System.out.println("Two String Number Multiplication is : " + number1 + " * " + number2 + " = "
-                    + output);
+                    + "0");
             return;
         }
 
-        output = convertIntegerToString(convertStringToInteger(number1) * convertStringToInteger(number2));
-
         System.out.println("Two String Number Multiplication is : " + number1 + " * " + number2 + " = "
-                + output);
+                + convertIntegerToString(convertStringToInteger(number1) * convertStringToInteger(number2)));
 
     }
 
