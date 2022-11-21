@@ -7,56 +7,56 @@ E.g. String A = 25 and string B = 125 , result = 3125. Don’t use string.parseInt
 
 public class MultiplyTwoStringNumbers {
 
-	private static String convertIntegerToString(int result) {
+    private static String convertIntegerToString(int result) {
 
-		String res = "";
+        String res = "";
 
-			while (result>0){
-			int digitValue = result % 10;
-			char digit = (char) ('0' + digitValue);
-			res = digit + res;
-			result = result / 10;
-		}
+        while (result > 0) {
+            int digitValue = result % 10;
+            char digit = (char) ('0' + digitValue);
+            res = digit + res;
+            result = result / 10;
+        }
 
-		return res;
-	}
+        return res;
+    }
 
 
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("Please Enter the First Number : ");
-		
-		String number1 = sc.next();
+    public static void main(String[] args) {
 
-		System.out.print(" \n Please Enter the Second Number : ");
-		
-		String number2 = sc.next();
+        Scanner sc = new Scanner(System.in);
 
-		String output = "0";
-		if(number1.equalsIgnoreCase("0") || number1.equalsIgnoreCase("0")){
-			System.out.println("Two String Number Multiplication is : " + number1 + " * " + number2 + " = "
-					+ output);
-			return;
-		}
+        System.out.print("Please Enter the First Number : ");
 
-		 output = convertIntegerToString(convertStringToInteger(number1) * convertStringToInteger(number2));
+        String number1 = sc.next();
 
-			System.out.println("Two String Number Multiplication is : " + number1 + " * " + number2 + " = "
-					+ output);
-				
-	}
+        System.out.print(" \n Please Enter the Second Number : ");
 
-	private static int convertStringToInteger(String number) {
+        String number2 = sc.next();
 
-		int sum = 0;
+        String output = "0";
+        if (number1.equalsIgnoreCase("0") || number1.equalsIgnoreCase("0")) {
+            System.out.println("Two String Number Multiplication is : " + number1 + " * " + number2 + " = "
+                    + output);
+            return;
+        }
 
-			for (int i = 0; i < number.length(); i++) {
+        output = convertIntegerToString(convertStringToInteger(number1) * convertStringToInteger(number2));
 
-				sum = (sum * 10) + (number.charAt(i) - '0');
-			}
-		return sum;
-	}
+        System.out.println("Two String Number Multiplication is : " + number1 + " * " + number2 + " = "
+                + output);
+
+    }
+
+    private static int convertStringToInteger(String number) {
+
+        int sum = 0;
+
+        for (int i = 0; i < number.length(); i++) {
+
+            sum = (sum * 10) + (number.charAt(i) - '0');
+        }
+        return sum;
+    }
 
 }
